@@ -11,9 +11,9 @@ number = 1
 while number <= 50 do
    if number % 5 == 0 && number % 3 == 0
      puts 'Fizz-Buzz'
-   elsif number % 5 == 0
-   	 puts 'Fizz'
    elsif number % 3 == 0
+   	 puts 'Fizz'
+   elsif number % 5 == 0
    	 puts 'Buzz'
    else puts number
    end
