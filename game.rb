@@ -6,12 +6,16 @@
 # divisible by 3 and 5 output 'Fizz Buzz'.
 # In any other case output the number.
 
-number = 1
+number = 0
 
-while number <= 50 do
-   puts number
+while number < 50 do
    number = number + 1
-   if number % 5 == 0
-     puts 'Fizz'
+   if number % 5 == 0 && number % 3 == 0
+     puts 'Fizz-Buzz'
+   elsif number % 5 == 0
+   	 puts 'Fizz'
+   elsif number % 3 == 0
+   	 puts 'Buzz'
+   else puts number
    end
 end
